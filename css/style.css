@@ -132,8 +132,10 @@ body{
 }  
 
 .nav-toggle {  
-    display: block; /* Show toggle button on mobile */  
-    margin-top: -4px;
+    display: block;
+    margin-top: -50px;
+    margin-left: 98px;
+
 }  
  
 
@@ -144,9 +146,10 @@ body{
   }  
  
   .container img {  
-      width: 77px; /* Resize logo for smaller screens */  
-      height: 35px; /* Maintain aspect ratio */
-      border-radius: 4px;  
+      width: 77px;
+      height: 35px;
+      margin-top: 20px;
+      border-radius: 4px
   }  
 } 
 
@@ -165,11 +168,49 @@ body{
       flex-direction: column; /* Stack nav items vertically */  
       width: 100%; /* Full width for nav */  
   }  
-  .container .call .callbtn {  
+  .container img {
+    width: 77px;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 4px
+  }
+  .container .call  {  
     font-size: smaller;
-    margin-left: 92px;
+    margin: -69px 0px 0px 147px;
 } 
 }  
+@media (min-width:320 )and (max-width: 400px) {  
+  .container {  
+      flex-direction: column; /* Stack header elements vertically */  
+      padding: 7px 10px; /* Reduce padding further */  
+  }  
+  .nav-item {  
+      width: 100%; /* Full width for nav items */  
+      text-align: center; /* Center align nav item text */  
+      padding: 4px 0; /* Increase padding for touch targets */  
+  }  
+
+  .nav {  
+      flex-direction: column; /* Stack nav items vertically */  
+      width: 100%; /* Full width for nav */  
+  } 
+  .nav-toggle {
+    display: block;
+    margin-top: -50px;
+    margin-left: 98px;
+}
+
+  .container .call  {  
+    font-size: smaller;
+    margin: -69px 0px 0px 147px;
+  } 
+.container img {
+  width: 77px;
+  height: 35px;
+  margin-top: 20px;
+  border-radius: 4px
+}  
+}
 
 /* hearo area */
 .hearoarea {  
