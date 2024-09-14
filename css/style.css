@@ -38,6 +38,7 @@ body{
 } 
 .container .call{
     width: 283px;
+    cursor: pointer;
 }
 .container .call p{
     margin-left: 95px;
