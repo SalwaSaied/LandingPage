@@ -109,7 +109,7 @@ body{
   border-bottom: solid 3px #11695f; 
 }  
 /* Responsive Styles */  
-@media (max-width: 768px) {  
+@media (max-width: 600px) {  
   .container {  
       padding: 22px 20px; /* Adjust padding for smaller screens */  
   }  
