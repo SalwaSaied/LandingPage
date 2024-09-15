@@ -40,6 +40,45 @@ function showSlides(n) {
 }
 
 
-document.querySelector('.nav-toggle').addEventListener('click', function() {  
-  document.querySelector('.nav-container').classList.toggle('active');  
-}); 
+
+
+
+
+
+// Select the nav toggle button and the navigation menu  
+const navToggle = document.querySelector('.nav-toggle');  
+const nav = document.querySelector('.nav');  
+const call = document.querySelector(".call")
+
+// Add an event listener to the nav toggle button  
+navToggle.addEventListener('click', () => {  
+    // Toggle 'active' class on the navigation to show/hide it  
+    nav.classList.toggle('active');  
+
+    // Optional: Change the toggle button appearance when the menu is active  
+    if (nav.classList.contains('active')) {  
+        navToggle.textContent = '☰'; // Change icon to close icon  
+    } else {  
+        navToggle.textContent = '☰'; // Change back to the menu icon  
+    }  
+});  
+
+// Close the navigation when clicking outside  
+document.addEventListener('click', (event) => {  
+    if (!nav.contains(event.target) && !navToggle.contains(event.target)) {  
+        nav.classList.remove('active'); // Hide navigation  
+        navToggle.textContent = '☰ '; // Reset button text  
+    }  
+});
+
+function myFunction() {
+  if (nav.style.display === "block") {
+    nav.style.display = "none";
+    call.style.display = "block";
+    
+  } else {
+    nav.style.display = "block";
+    call.style.display = "none";
+
+  }
+}

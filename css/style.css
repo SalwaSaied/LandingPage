@@ -107,7 +107,7 @@ body{
   border-bottom: solid 3px #11695f; 
 }  
 /* Responsive Styles */  
-@media (min-width:420)and (max-width: 768px) {  
+@media (max-width: 768px) {  
   
   .container {  
     flex-direction: column; /* Stack header elements vertically */  
@@ -120,14 +120,20 @@ body{
 }  
 
 .nav {  
-    flex-direction: column; /* Stack nav items vertically */  
-    width: 100%; /* Full width for nav */  
-} 
+  display: none; /* Start off hidden on mobile */  
+  flex-direction: column; /* Stack items vertically */  
+}  
+
+ 
 .nav-toggle {
   display: block;
   margin-top: -50px;
   margin-left: 98px;
 }
+.nav-item .active {  
+  display: flex; /* Show the nav when it's active */  
+}
+
 .container .call  {  
   font-size: smaller;
   margin: -69px 0px 0px 147px;
@@ -151,17 +157,14 @@ body{
       text-align: center; /* Center align nav item text */  
       padding: 4px 0; /* Increase padding for touch targets */  
   }  
-
+  
   .nav {  
       flex-direction: column; /* Stack nav items vertically */  
       width: 100%; /* Full width for nav */  
   } 
-  .nav-toggle {
-    display: block;
-    margin-top: -50px;
-    margin-left: 98px;
-}
-
+  .nav-item .active {  
+    display: none; /* Hide the Home link when in responsive view */  
+  } 
   .container .call  {  
     font-size: smaller;
     margin: -69px 0px 0px 147px;
