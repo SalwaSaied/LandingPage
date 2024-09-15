@@ -123,11 +123,7 @@ body{
     flex-direction: column; /* Stack nav items vertically */  
     width: 100%; /* Full width for nav */  
 } 
-.nav-toggle {
-  display: block;
-  margin-top: -50px;
-  margin-left: 98px;
-}
+
 .container .call  {  
   font-size: smaller;
   margin: -69px 0px 0px 147px;
