@@ -139,9 +139,7 @@ body{
     margin-left: 98px;
 
 }  
- 
-
-  .nav-item {  
+   .nav-item {  
       width: auto; /* Allow nav items to adjust */  
       padding: 8px; /* Reduced padding */  
       font-size: 14px; /* Reduce font size */  
@@ -178,7 +176,12 @@ body{
     font-size: smaller;
     margin: -69px 0px 0px 147px;
 } 
+.nav-toggle {  
+  display: block;
+  margin-top: -50px;
+  margin-left: 98px;
 }  
+}
 @media (min-width:320 )and (max-width: 400px) {  
   .container {  
       flex-direction: column; /* Stack header elements vertically */  
