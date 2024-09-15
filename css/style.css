@@ -58,15 +58,13 @@ body{
     letter-spacing: 0.94px;
     color: var(--color-FFFFFF);
     cursor: pointer;
-
 } 
 .container img{
     Width:100px;
     height:40px;
-
+    margin-top: 10px;
 }
 
- 
 .active {  
   box-shadow: 10px 11px -1px 10px; 
   background-color:#30a597; 
@@ -109,7 +107,7 @@ body{
   border-bottom: solid 3px #11695f; 
 }  
 /* Responsive Styles */  
-@media (max-width: 768px) {  
+@media (min-width:600)and (max-width: 768px) {  
   .container {  
       padding: 22px 20px; /* Adjust padding for smaller screens */  
   }  
@@ -129,23 +127,23 @@ body{
     width: 100%;  
 }  
 
-.nav-container.active .nav {  
-    display: flex; /* Show navigation when active */  
-}  
+ /* .nav-container.active .nav {  
+    display: flex; 
+}   */
 
-.nav-toggle {  
+ .nav-toggle {  
     display: block;
     margin-top: -50px;
     margin-left: 98px;
 
 }  
-   .nav-item {  
+ .nav-item {  
       width: auto; /* Allow nav items to adjust */  
       padding: 8px; /* Reduced padding */  
       font-size: 14px; /* Reduce font size */  
   }  
  
-  .container img {  
+.container img {  
       width: 77px;
       height: 35px;
       border-radius: 4px
@@ -177,9 +175,9 @@ body{
     margin: -69px 0px 0px 147px;
 } 
 .nav-toggle {  
-  display: block;
-  margin-top: -50px;
-  margin-left: 98px;
+    display: block;
+    margin-top: -50px;
+    margin-left: 98px;
 }  
 }
 @media (min-width:320 )and (max-width: 400px) {  
@@ -208,10 +206,10 @@ body{
     margin: -69px 0px 0px 147px;
   } 
 .container img {
-  width: 77px;
-  height: 35px;
-  margin-top: 20px;
-  border-radius: 4px
+    width: 77px;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 4px
 }  
 }
 
