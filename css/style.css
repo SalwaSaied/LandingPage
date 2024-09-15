@@ -109,37 +109,47 @@ body{
   border-bottom: solid 3px #11695f; 
 }  
 /* Responsive Styles */  
-@media (max-width: 600px) {  
+@media (max-width: 768px) {  
   .container {  
-    flex-direction: column; /* Stack header elements vertically */  
-    padding: 7px 10px; /* Reduce padding further */  
-}  
-.nav-item {  
-    width: 100%; /* Full width for nav items */  
-    text-align: center; /* Center align nav item text */  
-    padding: 4px 0; /* Increase padding for touch targets */  
+      padding: 22px 20px; /* Adjust padding for smaller screens */  
+  }  
+
+  .container .call .callbtn {  
+      font-size: smaller;
+      margin-left: 92px;
+  }  
+
+  .nav {  
+    display: none;  /* Hide navigation by default on mobile */  
+    flex-direction: column;  /* Stack items vertically */  
+    position: absolute;  
+    top: 65px; /* Aligns dropdown under the nav bar */  
+    left: 0;  
+    background-color: var(--color-0B9586);  
+    width: 100%;  
 }  
 
-.nav {  
-    flex-direction: column; /* Stack nav items vertically */  
-    width: 100%; /* Full width for nav */  
-} 
-.nav-toggle {
-  display: block;
-  margin-top: -50px;
-  margin-left: 98px;
-}
-
-.container .call  {  
-  font-size: smaller;
-  margin: -69px 0px 0px 147px;
-} 
-.container img {
-width: 77px;
-height: 35px;
-margin-top: 20px;
-border-radius: 4px
+.nav-container.active .nav {  
+    display: flex; /* Show navigation when active */  
 }  
+
+.nav-toggle {  
+    display: block;
+    margin-top: -50px;
+    margin-left: 98px;
+
+}  
+   .nav-item {  
+      width: auto; /* Allow nav items to adjust */  
+      padding: 8px; /* Reduced padding */  
+      font-size: 14px; /* Reduce font size */  
+  }  
+ 
+  .container img {  
+      width: 77px;
+      height: 35px;
+      border-radius: 4px
+  }  
 } 
 
 @media (max-width: 480px) {  
